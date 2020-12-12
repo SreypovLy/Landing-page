@@ -1,0 +1,242 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+
+}
+/*Navigation Bar*/
+
+.l_navbar{
+    width: 100%;
+    padding: 50px 0;
+}
+.l_max__width{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.c_logo{
+    flex: 1;
+    display: flex;
+
+}
+.c_logo_box{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #458FF6;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.c_logo_box p{
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.c_logo a{
+    text-decoration: none;
+    position: absolute;
+    left: 60px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #233348;
+    mix-blend-mode: normal;
+}
+
+.c_menu{
+    flex: 1;
+    padding: 10px;
+}
+.c_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.c_menu ul li{
+    list-style-type: none;
+}
+.c_menu ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    line-height: 23px;
+    opacity: 0.5;
+    transition: font-size 0.5s ease;
+}
+.c_menu ul li a:hover{
+    opacity: 1;
+    font-size: 21px;
+}
+
+/*Main Content*/
+
+.l_home .l_max__width{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.c_rectangle{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: -4%;
+    top: 20%;
+}
+.c_rectangle img{
+    width: 100%;
+    height: 100%;
+}
+.l_home__content{
+    flex: 1;
+}
+.l_home_image{
+    flex: 1;
+}
+.l_home_image img{
+    width: 100%;
+    height: 100%;
+}
+.l_home .l_home__content .c_text1{
+    width: 60%;
+    margin-top: 120px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px; 
+}
+.l_home .l_home__content .c_text2{
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 32px; 
+    opacity: 0.5;
+}
+.l_home .l_home__content .c_btn{
+    width: 180px;
+    height: 50px;
+    background: #458FF6;
+    border-radius: 55px;
+    cursor: pointer;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.l_home .l_home__content .c_btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+@media (max-width: 1024px) {
+    .c_menu ul li{
+        margin-bottom: 50px;
+
+    }
+    .l_home{
+        flex-direction: column;
+    }
+  }
+
+/*------Footer-------*/
+
+.l_footer {
+    height: auto;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+.l_footer .l_max__width{
+    
+    padding: 100px 0 ;
+    justify-content: space-around;
+    
+}
+.l_footer1{
+    flex: 1;
+    margin-right: 10px;
+}
+.l_footer1:nth-child(1){
+    margin-left: 10px;
+    flex: 2;
+}
+.l_footer .c_logo_box{
+    background-color: #FFFFFF;
+}
+.l_footer .c_logo_box p{
+    color: #458FF6;
+}
+.l_footer .c_logo a{
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+
+}
+.l_footer .l_footer1 .c_text2{
+    width: 70%;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+/* or 156% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.l_footer .l_footer1 .c_text3{
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.l_footer .l_footer1 .c_text1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.l_footer .l_footer1 .c_text3 a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.l_footer .l_footer1:nth-child(n+2) .c_text2 ul{
+    margin-top: -50px;
+}
+.l_footer .l_footer1:nth-child(n+2) .c_text2 li{
+    list-style-type: none;
+    margin-left: -40px;
+}
+.l_footer .l_footer1:nth-child(n+2) .c_text2 li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+/* or 211% */
+    mix-blend-mode: normal;
+}
+
+.l_footer .c_rectangle{
+    position: absolute;
+    z-index: 1;
+}
+
