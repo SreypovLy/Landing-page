@@ -17,6 +17,8 @@ body{
     padding: 0 20px;
     overflow: hidden;
     margin: auto;
+    background: #458FF6;
+    display: ;
 }
 .title{
     text-align: center;
@@ -35,6 +37,7 @@ body{
     border-radius: 5px;
 }
 .c-text{
+    flex: 1;
     align-items: center;
     font-size: 18px;
     line-height: 30px;
@@ -44,6 +47,10 @@ body{
     width: 952px;
     height: 60px;
     margin-left: 11%;
+    background: #9176d4;
+}
+.c-text p{
+  text-align: center;
 }
 
 .bg-element{

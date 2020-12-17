@@ -160,38 +160,51 @@ body{
 
 /* Services */
 #services{
-    padding: 80px 0;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    min-height: 90hv;
+    align-items: center;
 }
 .l-service{
-    width: 100%;
-    max-width: 1200px;  
-    padding: 0 20px;
-    overflow: hidden;
-    margin: auto;
-    
+    flex-direction: row;
+    text-align: center;
 }
-.sub-service{
-  align-items: center;
+.c_sub-service{
+  flex-direction: row;
+  text-align: center;
 }
 .c_title{
-    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000000;
+    /* text-align: center;
     color:#000000;
     font-size: 36px;
     line-height: 56px;
     font-weight: 700;
-    font-weight: bold;
+    font-weight: bold; */
 }
 .c_border{
     width: 56px;
     height: 2px;
+    background: #000000;
+    border-radius: 5px;
+    margin:30px auto;
+    /* width: 56px;
+    height: 2px;
     background: black;
     margin: 40px auto;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 .c_text{
-    
-    text-align: center;
-    margin: auto 40px;
+    /* margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987; */
   }
 .c_text p{
     align-items: center;
@@ -202,8 +215,6 @@ body{
     color: #7D7987;
     
     /* width: 952px; */
-    
-   
 }
 
 .bg-element{
@@ -427,9 +438,6 @@ body{
     }
     .c_dot2{
       right: -5%;
-      bottom: 0px;
-      width: 100px;
-      height: 100px;
     }
   }
   
