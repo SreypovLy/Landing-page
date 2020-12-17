@@ -115,7 +115,7 @@ body{
     font-size: 30px;
   }
   .c_introText p{
-    font-size: 13px;
+    font-size: 15px;
   }
   .c_cta{
     padding: 20px 0px 0px 0px;
@@ -139,6 +139,42 @@ body{
     display: none;
   }
 }
+
+/* Container5 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Container6*/
 .l_container6{
   position: relative;
@@ -171,11 +207,11 @@ body{
   justify-content: space-between;
   margin-top: 50px;
 }
-.c_box1{
+.c_box1, .c_box__responsive, .c_box__responsive1{
   flex: 1; 
 }
 .c_inside__box1{
-  background: white;
+  background: #ffffff;
   margin: auto;
   width: 350px;
   height: 512px;
@@ -270,6 +306,9 @@ body{
   .l_subContainer62 .c_box1{
     padding: 20px;
   }
+  .c_box__responsive1{
+    margin-top: 45px;
+  }
   .c_dot3{
     display: none;
   }
@@ -277,9 +316,8 @@ body{
     display: none;
   }
 }
-
-
-
-
-
-
+@media screen and (max-width: 1419px){
+  .c_box__responsive{
+    margin-top: 45px;
+  }
+}
