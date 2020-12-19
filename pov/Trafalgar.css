@@ -59,15 +59,9 @@ body{
     color: #233348;
     mix-blend-mode: normal;
 }
-.l_menu{
-    flex: 1;
-}
-.l_menu ul{
-    display: inline-flex;
-}
-.l_menu ul li{
-    list-style-type: none;
-}
+.l_menu{ flex: 1; }
+.l_menu ul{ display: inline-flex; }
+.l_menu ul li{ list-style-type: none; }
 .l_menu ul li a{
     display: block;
     text-decoration: none;
@@ -79,32 +73,18 @@ body{
     padding: 10px 0;
     margin-left: 60px; 
 }
-.l_menu ul li a:hover{
-    opacity: 1;
-}
+.l_menu ul li a:hover{ opacity: 1; }
 .l_navbar.sticky{
     padding: 10px 0;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
     z-index: 1;
 }
-.l_navbar.sticky .c_logo_box{
-    background-color: #FFFFFF;
-}
-.l_navbar.sticky .c_logo_box p{
-    color: #458FF6;
-}
-.l_navbar.sticky .l_logo h1{
-    color: #FFFFFF;
-}
-.l_navbar.sticky .l_menu ul li a{
-    color: #FFFFFF;
-}
-.l_navbar.sticky .c_icon.menu__btn{
-    color: #FFFFFF;
-}
-.l_menu ul li a:hover{
-    opacity: 1; 
-}
+.l_navbar.sticky .c_logo_box{ background-color: #FFFFFF; }
+.l_navbar.sticky .c_logo_box p{ color: #458FF6; }
+.l_navbar.sticky .l_logo h1{ color: #FFFFFF; }
+.l_navbar.sticky .l_menu ul li a{ color: #FFFFFF; }
+.l_navbar.sticky .c_icon.menu__btn{ color: #FFFFFF; }
+.l_menu ul li a:hover{ opacity: 1; }
 .c_icon{
     display: none;
     font-size: 25px;
@@ -113,7 +93,7 @@ body{
 .c_icon.menu__btn{
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 28px;
     color: #233348;
 }
 .c_icon.cancel__btn{
@@ -150,23 +130,15 @@ body{
 /*-----------@media for responsive----------*/
 
 @media screen and (max-width: 1024px){
-    .l_navbar{
-        margin-top: -10%;
-    }
+    .l_navbar{ margin-top: -10%; }
     .c_dot1{
         display: none;
         top: 25%;
         left: -10%;
     }
-    .c_dot3{
-        display: none;
-    }
-    .c_icon{
-        display: block;
-    }
-    .c_icon.hide{
-        display:none; 
-    }
+    .c_dot3{ display: none; }
+    .c_icon{ display: block; }
+    .c_icon.hide{ display:none; }
     .l_navbar .l_menu ul{
         position: fixed;
         top: -100%;
@@ -180,36 +152,26 @@ body{
         padding: 60px 0;
         z-index: 1;
     }
-    .l_navbar .l_menu ul.active{
-        top: 0%;
-    }
-    .c_icon.hide{
-        display: none;
-    }
+    .l_navbar .l_menu ul.active{ top: 0%; }
+    .c_icon.hide{ display: none; }
     .l_menu ul li a{
         width: 100%;
         color: #FFFFFF;
         padding: 50px 100px 0 0;
         font-size: 22px;
     }
-    .l_home .l_max__width{
-        margin-top: 10%;
-    }
-    .l_home .l_max__width{
-        flex-direction: column;
-    }
+    .l_home .l_max__width{ margin-top: 10%; }
+    .l_home .l_max__width{ flex-direction: column; }
     .l_footer .l_max__width{
         padding: 100px 0 50px;
         flex-direction: column;
     }
-    .l_home .l_home__content{
-        margin-top: 20%;
-    }
+    .l_home .l_home__content{ margin-top: 20%; }
+    .l_footer1:nth-child(n+2){ margin-right: 30%; }
+    .l_footer1:nth-child(1){ margin-right: 5%; }
 }
 @media screen and (max-width: 1300px){
-    .l_home .l_home__content{
-        margin-top: 30%;
-    }
+    .l_home .l_home__content{ margin-top: 30%; }
 }
 .l_home .l_home__content .c_text1{
     width: 60%;
@@ -271,19 +233,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.l_footer1:nth-child(1){
-    flex: 2;
-}
+.l_footer1:nth-child(1){flex: 2;}
 .l_footer1:nth-child(n+2){
     flex: 1;
     margin-top: 25px;
 }
-.l_footer .c_logo_box{
-    background-color: #FFFFFF;
-}
-.l_footer .c_logo_box p{
-    color: #458FF6;
-}
+.l_footer .c_logo_box{background-color: #FFFFFF;}
+.l_footer .c_logo_box p{color: #458FF6;}
 .l_footer .l_logo h1{
     margin-left: 8px;
     font-style: normal;
@@ -328,9 +284,7 @@ body{
     color: #FFFFFF;
     text-decoration: none;
 }
-.l_footer .l_footer1:nth-child(n+2) .c_text2 ul{
-    margin-top: 45px;
-}
+.l_footer .l_footer1:nth-child(n+2) .c_text2 ul{ margin-top: 45px; }
 .l_footer .l_footer1:nth-child(n+2) .c_text2 li{
     list-style-type: none;
     font-style: normal;
@@ -339,4 +293,3 @@ body{
     mix-blend-mode: normal;
     line-height: 40px;
 }
-
