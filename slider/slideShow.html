@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slideShow.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <!---------Slider----------->
+    
+    <section class="l_slider">
+        <div class="l_container">
+            <div class="mySlides fade">
+                <div class="l_sub__contianer">
+                    <div class="l_title__box">
+                        <div class="l_title__cus">
+                        <div class="c_title__cus">What our customer are saying</div>
+                        <div class="c_border"></div>
+                    </div>
+                    </div>
+                    <div class="l_content__box">
+                        <div class="c_image__box">
+                            <img src="image 1.png" alt="customer">
+                        </div>
+                        <div class="c_name">
+                            <h1>Edward Newgate</h1>
+                            <p>Founder Circle</p>
+                        </div>
+                        <div class="c_con__text">
+                            “Our dedicated patient engagement app and web portal allow 
+                            you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="l_sub__contianer">
+                    <div class="l_title__box">
+                        <div class="l_title__cus">
+                        <div class="c_title__cus">What our customer are saying</div>
+                        <div class="c_border"></div>
+                    </div>
+                    </div>
+                    <div class="l_content__box">
+                        <div class="c_image__box">
+                            <img src="image 1.png" alt="customer">
+                        </div>
+                        <div class="c_name">
+                            <h1>Edward Newgate</h1>
+                            <p>Founder Circle</p>
+                        </div>
+                        <div class="c_con__text">
+                            “Our dedicated patient engagement app and web portal allow 
+                            you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="l_sub__contianer">
+                    <div class="l_title__box">
+                        <div class="l_title__cus">
+                        <div class="c_title__cus">What our customer are saying</div>
+                        <div class="c_border"></div>
+                    </div>
+                    </div>
+                    <div class="l_content__box">
+                        <div class="c_image__box">
+                            <img src="image 1.png" alt="customer">
+                        </div>
+                        <div class="c_name">
+                            <h1>Edward Newgate</h1>
+                            <p>Founder Circle</p>
+                        </div>
+                        <div class="c_con__text">
+                            “Our dedicated patient engagement app and web portal allow 
+                            you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="l_sub__contianer">
+                    <div class="l_title__box">
+                        <div class="l_title__cus">
+                        <div class="c_title__cus">What our customer are saying</div>
+                        <div class="c_border"></div>
+                    </div>
+                    </div>
+                    <div class="l_content__box">
+                        <div class="c_image__box">
+                            <img src="image 1.png" alt="customer">
+                        </div>
+                        <div class="c_name">
+                            <h1>Edward Newgate</h1>
+                            <p>Founder Circle</p>
+                        </div>
+                        <div class="c_con__text">
+                            “Our dedicated patient engagement app and web portal allow 
+                            you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="l_dot3">
+                <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+                <div style="text-align:center">
+                    <span class="c_dot" onclick="currentSlide(1)"></span> 
+                    <span class="c_dot" onclick="currentSlide(2)"></span> 
+                    <span class="c_dot" onclick="currentSlide(3)"></span> 
+                    <span class="c_dot" onclick="currentSlide(4)"></span> 
+                </div>
+                <a class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+        </div>
+    </section>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("c_dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" move", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " move";
+        }
+        </script>
+</body>
+</html>
