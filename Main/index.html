@@ -11,22 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!------Header------>
+       <!------Header------>
+
 <header>  
     <nav class="l_navbar">
         <div class="l_max__width">
-            <div class="c_logo">
+            <div class="l_logo">
                 <div class="c_logo_box"><p>T</p></div>
-                <a href="#">Trafalgar</a>
+                <h1>Trafalgar</h1>
             </div>
-            <div class="c_menu">
-                <ul>
+            <div class="l_menu">
+                <ul class="l_menu__list">
+                    <div class="c_icon cancel__btn "><i class="far fa-times-circle"></i></div>
                     <li ><a href="#">Home</a></li>
-               <li ><a href="#">Find a doctor</a></li>
+                    <li ><a href="#">Find a doctor</a></li>
                     <li ><a href="#">Apps</a></li>
                     <li ><a href="#">Testimnials</a></li>
                     <li ><a href="#">About us</a></li>
                 </ul>
+                <div class="c_icon menu__btn "><i class="fas fa-bars"></i></div>
             </div>
         </div>
     </nav>
@@ -36,7 +39,7 @@
         
 <Main>
     <section class="l_home" id="l_home">
-        <div class="c_rectangle"><img src="asset for contest/Screen Shot 2020-12-09 at 15.40.54.png" alt=""></div>
+        <div class="c_dot1"><img src="asset for contest/Screen Shot 2020-12-09 at 15.40.54.png" alt=""></div>
         <div class="l_max__width">
             <div class="l_home__content">
                 <div class="c_text1"><p>Virtual Healthcare for you</p></div>
@@ -44,14 +47,17 @@
                     healthcare, accessible on mobile and online 
                     for everyone</p>
                 </div>
-                <div class="c_btn"><a href="#">Consult today</a></div>
+                <div class="c_btn"><a href="#" target="_blank">Consult today</a></div>
             </div>
-            <div class="l_home_image">
+            <div class="l_home__image">
                 <img src="asset for contest/trafalgar-header illustration 1.png" alt="">
             </div>
         </div>
     </section>
 
+
+
+</Main>
 
     <!-- Services -->
     <section id="services">
@@ -252,32 +258,7 @@
     </section>
 </Main>
 
-<!-- /* testimonials */ -->
 
-
-<section id="customer">
-    <div class="l-box">
-        <div class="c-title-cus">
-            What our customer are saying
-        </div>
-        <div class="c-border"></div>
-        
-        <div class="c-content">
-            
-            <img src="asset for contest/image 1.png" class="img1" alt="">
-            
-            <div class="c-name">
-                <h1>Edward Newgate</h1>
-                <p>Founder Circle</p>
-            </div>
-            <div class="c-con-text">
-                “Our dedicated patient engagement app and web portal allow 
-                you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
-            </div>
-        </div>
-    </div>
-
-</section>
  
 
 
@@ -288,50 +269,59 @@
 <footer>
     <section class="l_footer">
         <div class="c_rectangle"><img src="asset for contest/Screen Shot 2020-12-09 at 15.40.54.png" alt=""></div>
-        <div class="l_max__width">
-            <div class="l_footer1">
-                <div class="c_logo">
+       
+        <div class="footer">
+            <div class="contain">
+              <div class="col">
+                <div class="col2">
+                <div class="l_logo">
                     <div class="c_logo_box"><p>T</p></div>
-                    <a href="#">Trafalgar</a>
+                    <h1 href="#">Trafalgar</h1>
                 </div>
-                <div class="c_text2"><p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online or everyone</p></div>
-                <div class="c_text3"><p><a href="#">©Trafalgar </a>PTY LTD 2020. All rights reserved</p></div>
+                <div class="c_text2"><p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p></div>
+                <div class="c_text3"><p><a href="#">&copy;Trafalgar </a>PTY LTD 2020. All rights reserved</p></div>
             </div>
-            <div class="l_footer1">
-                <div class="c_text1"><p>Company</p></div>
-                <div class="c_text2">
-                    <ul>
+            </div>
+              <div class="col">
+                <h1>Company</h1>
+                <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Find a doctor</a></li>
                         <li><a href="#">Apps</a></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
-            <div class="l_footer1">
-                <div class="c_text1"><p>Region</p></div>
-                <div class="c_text2">
-                    <ul>
+            
+            <div class="col">
+                <h1>Region</h1>
+                <ul>
                         <li><a href="#">Indonesia</a></li>
                         <li><a href="#">Singapore</a></li>
                         <li><a href="#">Hongkong</a></li>
                         <li><a href="#">Canada</a></li>
                     </ul>
-                </div>
             </div>
-            <div class="l_footer1">
-                <div class="c_text1"><p>Help</p></div>
-                <div class="c_text2">
-                    <ul>
+          
+            <div class="col">
+                <h1>Help</h1>
+                <ul>
                     <li><a href="#">Help center</a></li>
                     <li><a href="#">Contact support</a></li>
                     <li><a href="#">Instructions</a></li>
                     <li><a href="#">How it works</a></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
+              
+        
+          
+          
+        <div class="clearfix"></div>
+        </div>
+        </div>
         </div>
     </section>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
