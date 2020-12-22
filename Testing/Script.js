@@ -1,3 +1,6 @@
+
+//----------------------Header--------------------------// 
+
 const menu = document.querySelector(".l_menu__list");
 const menuBtn = document.querySelector(".menu__btn");
 const cancelBtn = document.querySelector(".cancel__btn");
@@ -13,6 +16,9 @@ cancelBtn.onclick = ()=>{
 window.onscroll = ()=>{
     this.scrollY > 20 ? l_navbar.classList.add("sticky") : l_navbar.classList.remove("sticky");
 }
+
+//------------------------Slider-------------------------//
+
 var slideIndex = 1;
 showSlides(slideIndex);
         
@@ -56,5 +62,5 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";  
 dots[slideIndex-1].className += " move"; 
-setTimeout(showSlider, 2000); // Change image every 2 seconds
+setTimeout(showSlider, 3000); // Change image every 2 seconds
 }
