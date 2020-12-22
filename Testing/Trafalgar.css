@@ -496,7 +496,7 @@ body{
     flex-direction: row;
     margin: auto;
 }
-.prev, .next {
+.c_prev, .c_next {
     cursor: pointer;
     width: auto;
     padding: 16px;
@@ -509,7 +509,7 @@ body{
     padding: 25px 100px;
     opacity: 0.5;
 }
-.prev:hover, .next:hover {
+.c_prev:hover, .c_next:hover {
    opacity: 1;
 }
 .c_dot{
@@ -789,7 +789,7 @@ body{
         margin: 0px 10px 0px 10px;
     }
     .c_image__box{ flex: 1.5; }
-    .prev, .next{ display: none; }
+    .c_prev, .c_next{ display: none; }
 
     /*------------SECTION 7: Check out our latest article------------*/
 
